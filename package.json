@@ -1,0 +1,32 @@
+{
+  "name": "edison-hive",
+  "version": "0.0.0",
+  "description": "listener for edison hive services",
+  "main": "web.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "keywords": [
+    "edison"
+  ],
+  "author": "Alex Shaw",
+  "repository": {
+     "type": "git",
+     "url": ""
+  },
+  "license": "MIT",
+  "dependencies": {
+    "logfmt": "~0.18.1",
+    "express": "~3.4.7",
+    "ejs" : "~0.8.5",     
+    "passport":"~ 0.1.17",
+     "connect-flash" : "~0.1.1",  
+    "passport-google-oauth" : "~0.1.5",
+    "bcrypt-nodejs" : "latest"  
+  },
+  "devDependencies": {
+    "mocha":"~1.13.0",
+    "should": "~2.1.1",
+    "supertest":"0.8.3"
+  }
+}
