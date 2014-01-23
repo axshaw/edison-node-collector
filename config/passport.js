@@ -1,7 +1,7 @@
 //config/passport.js
 
 // load all the things we need
-var GoogleStrategy   = require('passport-google').Strategy;
+var GoogleStrategy   = require('passport-google-oauth').OAuth2Strategy;
 
 // load up the user model
 //var User       		= require('../app/models/user');
@@ -32,6 +32,8 @@ module.exports = function(passport) {
 //   credentials (in this case, an OpenID identifier and profile), and invoke a
 //   callback with a user object.
 passport.use(new GoogleStrategy({
+    clientID:"07491386020.apps.googleusercontent.com",
+    consumerSecret:"",
     returnURL: 'http://localhost:5000/auth/google/return',
     realm: 'http://localhost:5000/'
   },

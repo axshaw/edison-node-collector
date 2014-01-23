@@ -88,7 +88,7 @@ module.exports = function(app, passport) {
 
 		app.post('/api',function(req, res) {
 			if (isNaN(req.body.edID))	{
-				res.send(403,'Missing application ID');	
+				res.send(403,'Missing application ID (edison');	
 			}else	{
 				res.send(200);
 			}
